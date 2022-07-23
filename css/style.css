@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* header{
+    width: 80%;
+    margin: 0 10%;
+} */
+
+/* header */
+.navbar-brand{    
+    height: 50px;
+}
+
+.navbar-brand img{
+    width: auto;
+    height: 100%;
+}
+
+.nav-item-hover:hover a{
+    color: #000;
+}
+
+.colorText-black{
+    color: #000;
+}
+
+@media (min-width: 992px) {
+    .nav-item-hover{
+        border: 1px solid #ccc;
+        border-radius: 12rem;
+    }
+}
