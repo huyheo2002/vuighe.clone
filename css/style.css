@@ -31,12 +31,8 @@
     color: #000;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     /* header */
-    .container-fluid{
-        padding: 0;        
-    }
-
     .nav-item-hover{
         border: 1px solid #ccc;
         border-radius: 12rem;
@@ -69,18 +65,20 @@
         transition: all linear 0.3s;        
         opacity: 0;
         visibility: hidden;
-    }
+    }    
 
     .subnav a{
         display: block;
         height: 87px;
         width: 155px;
         position: relative;
+        overflow: hidden;
     }
 
     .subnav img{
         width: 100%;
         height: 100%;
+        transition: all linear 0.2s;
     }
 
     .subnav div{
@@ -90,15 +88,21 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        margin-bottom: 0;
         width: 100%;
     }
 
     .subnav span{        
         color: #fff;
         font-size: 14px;
-        font-weight: 500;        
+        transition: color linear 0.1s;        
     }
 
+    .subnav li:hover span{
+        color: red;
+    }
+
+    .subnav li:hover img{
+        transform: scale(1.2);
+    }
 
 }
