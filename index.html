@@ -8,20 +8,23 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <!-- header -->
-    <header class="navbar navbar-expand-lg bg-light px-5">
+    <header class="navbar navbar-expand-xl bg-light px-5">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./images/logo_v8.png" alt="">
             </a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav">
                     <!-- <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -39,19 +42,27 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>                     -->
-                    <li class="nav-item nav-item-hover mx-2 px-2">
+                    <li class="nav-item nav-item-hover mx-1 px-1">
                         <a href="" class="nav-link colorText-black">Anime</a>                        
                     </li>
-                    <li class="nav-item nav-item-hover mx-2 px-2"><a href="" class="nav-link colorText-black">Movie</a></li>
-                    <li class="nav-item nav-item-hover mx-2 px-2"><a href="" class="nav-link colorText-black">Tin tức</a></li>
-                    <li class="nav-item nav-item-hover mx-2 px-2"><a href="" class="nav-link colorText-black">Truyện</a></li>
-                    <li class="nav-item nav-item-hover mx-2 px-2"><a href="" class="nav-link colorText-black">BXH</a></li>
+                    <li class="nav-item nav-item-hover mx-1 px-1"><a href="" class="nav-link colorText-black">Movie</a></li>
+                    <li class="nav-item nav-item-hover mx-1 px-1"><a href="" class="nav-link colorText-black">Tin tức</a></li>
+                    <li class="nav-item nav-item-hover mx-1 px-1"><a href="" class="nav-link colorText-black">Truyện</a></li>
+                    <li class="nav-item nav-item-hover mx-1 px-1"><a href="" class="nav-link colorText-black">BXH</a></li>
+                    
+                    <form class="d-flex ms-5" role="search">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Tìm kiếm Anime" aria-label="Search">
+                            <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
+            <ul class="navbar-expand list-unstyled my-2" id="function">
+                <li class="nav-item d-inline-block nav-item-function mx-1 my-1 px-2 py-1" id="user-tos"><i class="fa-solid fa-circle-info"></i></li>
+                <li class="nav-item d-inline-block nav-item-function mx-1 my-1 px-2 py-1" id="user-theme"><i class="fa-regular fa-sun"></i></li>
+                <li class="nav-item d-inline-block nav-item-function mx-1 my-1 px-2 py-1" id="user-avatar"><i class="fa-solid fa-user"></i></li>
+            </ul>
         </div>
     </header>
     <script src="./js/jquery-3.6.0.min.js"></script>
