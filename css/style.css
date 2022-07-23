@@ -105,4 +105,10 @@
         transform: scale(1.2);
     }
 
+    /* navbar icon */
+    .nav-item-function{
+        background: #ccc;
+        border-radius: 50%;
+    }
+
 }
