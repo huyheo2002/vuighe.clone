@@ -41,6 +41,7 @@
     opacity: 0.8;
 }
 
+
 @media (min-width: 1200px) {
     /* header */
     .nav-item-hover{
@@ -142,6 +143,10 @@
         transition: all linear 0.2s;
         cursor: pointer;
     }
+
+    .poster__bottom .poster__items{
+        margin-right: 0.5rem;        
+    }    
 }
 
 /* mobile */
