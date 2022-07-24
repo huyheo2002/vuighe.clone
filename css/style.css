@@ -128,13 +128,17 @@
 
     .poster__show{
         height: 290px;
-        width: 100%;
+        width: 75%;
         cursor: pointer;
+    }
+
+    .poster__top .poster__listItems{
+        width: 25%;
     }
 
     .poster__items{
         height: 90px;
-        width: 350px;
+        width: 100%;
         transition: all linear 0.2s;
         cursor: pointer;
     }
@@ -145,6 +149,10 @@
     /* poster */
     .poster__top{
         flex-direction: column;
+    }
+
+    .poster__top .poster__listItems{
+        width: 100%;
     }
 
     .poster__listItems{
